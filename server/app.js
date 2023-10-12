@@ -9,7 +9,7 @@ const port = process.env.PORT || 5000;
 
 app.get('/', (req, res) => {
     console.log(res)
-    return res.status(234).send('My First MERN Stack App')
+    return res.status(200).send('My First MERN Stack App')
 });
 
 app.listen(port, () => {
