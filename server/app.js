@@ -70,19 +70,48 @@ app.get('/books', async (req,res) => {
 
 
 // Route for GET One Book from database by ID
-app.get('/books', async (req,res) => {
+app.get('/books/:id', async (req,res) => {
     try {
-        const books = await Book.find({});
+        const { id } = req.params;
 
-        return res.status(200).json({
-            count: books.length,
-            data: books
-        });
+        const book = await Book.findById(id);
+
+        return res.status(200).json(book);
     } catch (error) {
         console.log(error.message);
         res.status(500).send({ message: error.message });
     }
 });
+
+
+// Route for UPDATE a Book from database
+app.put('/books/:id', async (req,res) => {
+    try {
+
+        if (
+            !req.body.title ||
+            !req.body.author ||
+            !req.body.publisherYear
+        ) {
+            return res.status(400).send({
+                message: 'Send all requred fields: author, publisherYear',
+            });
+        }
+
+        const { id } = req.params;
+
+        const result = await Book.findByIdAndUpdate(id, req.body);
+
+        if (!results) {
+            return res.status(404).json({ message: 'Book not found'});
+        }
+
+    } catch (error) {
+        console.log(error.message);
+        res.status(500).send({ message: error.message });
+    }
+});
+
 
 
 mongoose
