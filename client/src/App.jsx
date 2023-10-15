@@ -1,9 +1,9 @@
-import './App.css'
+import React from 'react'
 
-function App() {
+const App = () => {
   return (
     <>
-      <h1 className='text-red-700 font-light'> Hello world, Tailwind css</h1>
+      
     </>
   )
 }
