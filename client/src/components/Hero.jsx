@@ -29,7 +29,7 @@ const Hero = () => {
 
             </div>
 
-            <div className='w-1/2 h-128 bg-herobg bg-contain bg-right bg-no-repeat overflow-hidden grid items-center'>
+            <div className='w-1/2 h-128 bg-herobg bg-contain bg-right bg-no-repeat overflow-hidden grid items-center relative'>
             <img src={Bookstack} alt="books" className='pl-24 ml-10 w-full'/>
             </div>
 
