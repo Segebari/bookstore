@@ -10,6 +10,11 @@ export default {
         '128': '33rem',
       }
     },
+
+
+    backgroundImage: {
+      'herobg': "url('/src/assets/hero-curved-bg.svg')",
+    }
   },
   plugins: [],
 }

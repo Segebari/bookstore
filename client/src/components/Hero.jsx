@@ -1,6 +1,7 @@
 import React from 'react';
 import SearchIcon from '../assets/search-icon.svg';
 import Bookstack from '../assets/book-stack.svg';
+import CurvedBg from '../assets/hero-curved-bg.svg';
 
 const Hero = () => {
   return (
@@ -28,8 +29,8 @@ const Hero = () => {
 
             </div>
 
-            <div className='w-1/2 h-128 bg-orange-500 flex items-end'>
-            <img src={Bookstack} alt="books" className=''/>
+            <div className='w-1/2 h-128 bg-herobg bg-contain bg-right bg-no-repeat overflow-hidden grid items-center'>
+            <img src={Bookstack} alt="books" className='pl-24 ml-10 w-full'/>
             </div>
 
         </div>
