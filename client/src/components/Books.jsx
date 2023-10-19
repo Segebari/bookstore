@@ -1,12 +1,15 @@
 import React from 'react'
+import Bookcover1 from '../assets/anthony-book.svg';
 
 const Books = () => {
   return (
     <>
-      <section className='bg-gray-100 h-full p-56 pb-20'>
+      <section className='bg-gray-100 h-full p-52 pb-20 relative'>
             <div className='flex gap-40'>
 
-                <div className='relative'>
+                <div className='flex relative'>
+
+                <img src={Bookcover1} alt="searchicon" className='absolute top-0 ml-[-6rem]'/>
                     <div className='bg-white h-80 w-96 pl-28 pr-10 pt-8'>
                         <h1 className='text-black text-light'>All The Light We <br />
                         Cannot See</h1>
@@ -32,12 +35,12 @@ const Books = () => {
                         <button className='w-full border border-orange-400 rounded-md mt-4 py-1 text-orange-400 bg-orange-100 hover:text-white hover:bg-orange-400 font-medium'> Buy Now </button>
                         
                     </div>
-                    <div className='absolute'>
-
-                    </div>
+                   
                 </div>
 
-                <div className='relative'>
+                <div className='flex relative'>
+
+                <img src={Bookcover1} alt="searchicon" className='absolute top-0 ml-[-6rem]'/>
                     <div className='bg-white h-80 w-96 pl-28 pr-10 pt-8'>
                         <h1 className='text-black text-light'>All The Light We <br />
                         Cannot See</h1>
@@ -63,9 +66,7 @@ const Books = () => {
                         <button className='w-full border border-orange-400 rounded-md mt-4 py-1 text-orange-400 bg-orange-100 hover:text-white hover:bg-orange-400 font-medium'> Buy Now </button>
                         
                     </div>
-                    <div className='absolute'>
-
-                    </div>
+                   
                 </div>
 
             </div>
