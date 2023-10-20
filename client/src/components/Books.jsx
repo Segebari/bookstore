@@ -1,6 +1,8 @@
 import React from 'react'
 import Bookcover1 from '../assets/anthony-book.svg';
 import Bookcover2 from '../assets/delia-book.svg';
+import Bookcover3 from '../assets/kevin-book.svg';
+import Bookcover4 from '../assets/kwan-book.svg';
 
 const Books = () => {
   return (
@@ -78,11 +80,11 @@ const Books = () => {
 
                 <div className='flex relative'>
 
-    <img src={Bookcover1} alt="searchicon" className='absolute top-0 ml-[-6rem]'/>
+    <img src={Bookcover3} alt="searchicon" className='absolute top-0 ml-[-6rem]'/>
         <div className='bg-white h-80 w-96 pl-28 pr-10 pt-8'>
-            <h1 className='text-black text-light'>All The Light We <br />
-            Cannot See</h1>
-            <h5 className='text-gray-500'>By Anthony Doerr</h5>
+            <h1 className='text-black text-light'>Rich People <br />
+            Problems</h1>
+            <h5 className='text-gray-500'>By Kevin Kwan</h5>
 
             <div className='flex justify-between w-full'>
 
@@ -110,10 +112,10 @@ const Books = () => {
 
                 <div className='flex relative'>
 
-                <img src={Bookcover2} alt="searchicon" className='absolute top-0 ml-[-6rem]'/>
+                <img src={Bookcover4} alt="searchicon" className='absolute top-0 ml-[-6rem]'/>
                     <div className='bg-white h-80 w-96 pl-28 pr-10 pt-8'>
-                        <h1 className='text-black text-light'>Where The <br /> Crawdads Sing</h1>
-                        <h5 className='text-gray-500'> By Delia Owens </h5>
+                        <h1 className='text-black text-light'>Crazy Rich <br /> Asians</h1>
+                        <h5 className='text-gray-500'> By Kevin Kwan </h5>
 
                         <div className='flex justify-between w-full'>
 
@@ -125,7 +127,7 @@ const Books = () => {
                             <i class="uil uil-star"></i>
                             </div>
 
-                            <p className='text-gray-300'> 500 voters </p>
+                            <p className='text-gray-300'> 2400 voters </p>
                         </div>
 
                         <div className='text-gray-300 pt-6'>
@@ -210,11 +212,11 @@ const Books = () => {
 
                 <div className='flex relative'>
 
-    <img src={Bookcover1} alt="searchicon" className='absolute top-0 ml-[-6rem]'/>
+    <img src={Bookcover3} alt="searchicon" className='absolute top-0 ml-[-6rem]'/>
         <div className='bg-white h-80 w-96 pl-28 pr-10 pt-8'>
-            <h1 className='text-black text-light'>All The Light We <br />
-            Cannot See</h1>
-            <h5 className='text-gray-500'>By Anthony Doerr</h5>
+            <h1 className='text-black text-light'>Rich People <br />
+            Problems</h1>
+            <h5 className='text-gray-500'>By Kevin Kwan</h5>
 
             <div className='flex justify-between w-full'>
 
@@ -242,10 +244,10 @@ const Books = () => {
 
                 <div className='flex relative'>
 
-                <img src={Bookcover2} alt="searchicon" className='absolute top-0 ml-[-6rem]'/>
+                <img src={Bookcover4} alt="searchicon" className='absolute top-0 ml-[-6rem]'/>
                     <div className='bg-white h-80 w-96 pl-28 pr-10 pt-8'>
-                        <h1 className='text-black text-light'>Where The <br /> Crawdads Sing</h1>
-                        <h5 className='text-gray-500'> By Delia Owens </h5>
+                        <h1 className='text-black text-light'>Crazy Rich <br /> Asians</h1>
+                        <h5 className='text-gray-500'> By Kevin Kwan </h5>
 
                         <div className='flex justify-between w-full'>
 
@@ -257,7 +259,7 @@ const Books = () => {
                             <i class="uil uil-star"></i>
                             </div>
 
-                            <p className='text-gray-300'> 500 voters </p>
+                            <p className='text-gray-300'> 2400 voters </p>
                         </div>
 
                         <div className='text-gray-300 pt-6'>
