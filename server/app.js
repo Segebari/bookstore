@@ -2,6 +2,7 @@ import express, { request, response } from "express";
 import dotenv from "dotenv";
 import mongoose from "mongoose";
 import booksRoute from "./routes/booksRoute.js";
+import cors from "cors";
 
 
 dotenv.config();
@@ -26,6 +27,11 @@ app.get('/', (req, res) => {
 
 
 app.use('/books', booksRoute);
+
+
+// Middleware for handling CORS POLICY
+// Option 1: Allpw All Origins with Default of cors(*)
+app.use(cors()); 
 
 
 

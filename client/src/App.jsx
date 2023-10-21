@@ -6,12 +6,14 @@ import Footer from './components/Footer';
 
 const App = () => {
   return (
-    <>
-      <Navbar />
-      <Hero />
-      <Books />
-      <Footer />
-    </>
+    
+      <>
+        <Navbar />
+        <Hero />
+        <Books />
+        <Footer />
+        </>
+     
   )
 }
 
