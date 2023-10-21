@@ -8,7 +8,7 @@ import cors from "cors";
 dotenv.config();
 
 const app = express();
-const port = process.env.PORT || 5000;
+const port = process.env.PORT || 5173;
 
 //  mongoDb key
 
@@ -31,7 +31,13 @@ app.use('/books', booksRoute);
 
 // Middleware for handling CORS POLICY
 // Option 1: Allpw All Origins with Default of cors(*)
-app.use(cors()); 
+// Option 2: Custom Origins
+app.use(
+  cors({
+    origin: 'http://localhost:5173',
+    methods: ['GET', 'POST', 'PUT', 'DELETE'],
+    allowedHeaders: ['Content-Type'],
+})); 
 
 
 
