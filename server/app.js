@@ -1,7 +1,6 @@
 import express, { request, response } from "express";
 import dotenv from "dotenv";
 import mongoose from "mongoose";
-import { Book } from "./models/bookModel.js";
 import booksRoute from "./routes/booksRoute.js";
 
 
