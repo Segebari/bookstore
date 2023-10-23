@@ -14,10 +14,16 @@ const bookSchema = mongoose.Schema(
             type: Number,
             required: true,
         },
+        image: {
+            type: String,
+            required: true,
+        },
     },
     {
         timestamps: true,
     }
 );
 
-export const Book = mongoose.model('Book', bookSchema);
+const Book = mongoose.model('Book', bookSchema);
+
+export default Book;
